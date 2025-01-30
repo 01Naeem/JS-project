@@ -1,0 +1,303 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(228, 228, 228);
+}
+
+header {
+  background-image: url(/images/1737993896428.jpg);
+  background-size: cover;
+  height: 100vh;
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 10px;
+    .logo {
+      img {
+        width: 200px;
+      }
+    }
+    .mainNavbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 5px;
+      gap: 60px;
+      list-style: none;
+      li {
+        a {
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+}
+
+// <!--------------------- Content ------------------------>
+
+.content {
+  justify-items: center;
+  div {
+    max-width: 1200px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px lightgray;
+    padding: 20px;
+    text-align: start;
+    margin: 10px;
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+      span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.whyChooseUs {
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  .book {
+    color: lightsalmon;
+    font-size: 18px;
+  }
+  .advantages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .advantage {
+      padding: 15px;
+      max-width: 250px;
+      text-align: start;
+      h2 {
+        font-size: 25px;
+        i {
+          color: lightsalmon;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// <!--------------------- WhatWeOffer ------------------------>
+
+.WhatWeOffer {
+  justify-content: center;
+  text-align: center;
+  .offer {
+    color: lightsalmon;
+    font-size: 18px;
+  }
+}
+
+// <!--------------------- chooseYourCar ------------------------>
+
+.chooseYourCar {
+  margin-left: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  .car {
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px lightgray;
+    border-top: none;
+    .carImage {
+      img {
+        max-width: 350px;
+      }
+    }
+    .carDetails {
+      button {
+        padding: 6px 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// <!------------ bookYourCar -------------BookNow Page ----------->
+
+.bookYourCar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  .information {
+    max-width: 500px;
+    text-align: start;
+    padding: 50px;
+    label {
+      font-size: 18px;
+      color: black;
+      font-weight: lighter;
+      padding-bottom: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    select {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.bookNow {
+  text-align: center;
+  margin-bottom: 100px;
+  button {
+    padding: 7px 80px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: black;
+      color: #f5f5f5;
+    }
+  }
+}
+.bookNowPage {
+  background-image: url(/images/pexels-brett-sayles-1638459.jpg);
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  h1 {
+    font-weight: lighter;
+    font-size: 55px;
+    text-align: right;
+    color: gray;
+  }
+}
+
+// <!-------------------- Footer -------------------->
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(194, 192, 192);
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px gray;
+  .help {
+    li {
+      padding: 20px;
+    }
+  }
+  .footerContent {
+    max-width: 350px;
+    text-align: start;
+    padding: 20px;
+    .information {
+      padding: 10px;
+    }
+    .ReachIcon {
+      display: flex;
+      gap: 30px;
+      i {
+        font-size: 30px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          color: black;
+        }
+      }
+      .fa-youtube {
+        color: red;
+      }
+      .fa-instagram {
+        color: #e4405f;
+      }
+      .fa-facebook {
+        color: #3b5998;
+      }
+    }
+    li {
+      list-style: none;
+      font-size: 18px;
+      color: black;
+      padding-bottom: 10px;
+      a {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+// <!-------------------- secFooter -------------------->
+
+.secFooter {
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+  p {
+    color: black;
+  }
+}
+
+// <!-------------------- Show Table -------------------->
+
+#table {
+  border: 2px solid black;
+  background-color: lightblue;
+  align-items: center;
+  box-shadow: 5px 5px 8px lightgray;
+  tr {
+    th {
+    border: 2px solid black;
+    padding: 8px;
+    }    
+    td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  }
+}
