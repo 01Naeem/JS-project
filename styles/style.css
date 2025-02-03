@@ -288,4 +288,12 @@ header .navbar .mainNavbar li a:hover {
 #table tr td {
   border: 1px solid lightsalmon;
   padding: 8px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
