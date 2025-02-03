@@ -2,15 +2,15 @@ async function dataShow() {
     let api = "http://localhost:3000/car";
     let Table = `<table id='table'>
   <tr>
-  <th>Name: </th>
-  <th>Phone:</th>
-  <th>Email: </th>
-  <th>PickUpDate: </th>
-  <th>PickUpTime: </th>
-  <th>DropDate: </th>
-  <th>DropTime: </th>
-  <th>LicenceNumber: </th>
-  <th>CarAvailable: </th>
+  <th>Name</th>
+  <th>Phone</th>
+  <th>Email</th>
+  <th>PickUpDate</th>
+  <th>PickUpTime</th>
+  <th>DropDate</th>
+  <th>DropTime</th>
+  <th>LicenceNumber</th>
+  <th>CarAvailable</th>
   </tr>`;
 
     const myObj = await fetch(api);

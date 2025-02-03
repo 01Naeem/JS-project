@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <title>BookNow</title>
+    <title>DisplayData</title>
 </head>
 <body>
-    <header class="bookNowPage">
+
+    <header>
         <div class="hero">
             <nav class="navbar">
                 <a href="/index.html" class="logo"><img src="/images/logo.png" alt=""></a>
@@ -27,66 +27,17 @@
                 </ul>
             </nav>
         </div>
-        <h1>Book Your Self Drive Car</h1>
     </header>
 
-<!--------------------- bookYourCar ------------------------>
+    <h1 style="text-align: center; background-color: lightgray; padding: 10px; box-shadow: 4px 4px 8px lightsalmon;"> Welcome to Student Management System</h1>
+    <hr size="4" color="red">
+ 
+    <div id="demo"></div>
+    <hr size="1" color="red">
+ 
+    <p id="demo1"></p>
 
-<div class="bookYourCar">
-    <div class="information">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" placeholder="Enter Name" required>
-    </div>
-    <div class="information">
-        <label for="phone">Phone:</label><br>
-        <input type="number" id="phone" placeholder="Enter Phone" required>
-    </div>
-    <div class="information">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="Enter Email" required>
-    </div>
-    <div class="information">
-        <label for="pickUpDate">Pick Up Date:</label><br>
-        <input type="date" id="pickUpDate" required>
-    </div>
-    <div class="information">
-        <label for="pickUpTime">Pick Up Time:</label><br>
-        <input type="time" id="pickUpTime" required>
-    </div>
-    <div class="information">
-        <label for="licence">Driving Licence Number:</label><br>
-        <input type="text" id="licence" placeholder="Enter Driving Licence Number" required>
-    </div>
-    <div class="information">
-        <label for="dropDate">Drop Date:</label><br>
-        <input type="date" id="dropDate" required>
-    </div>
-    <div class="information">
-        <label for="dropTime">Drop Time:</label><br>
-        <input type="time" id="dropTime" required>
-    </div>
-    <div class="information">
-        <label for="select">Car Available:</label><br>
-        <select name="carDetail" id="carModel">
-            <option value="none">Select Car</option>
-            <option value="Audi Q3">Audi Q3</option>
-            <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class</option>
-            <option value="BMW 3 Series">BMW 3 Series</option>
-            <option value="ScorpioN">ScorpioN</option>
-            <option value="Toyota Corolla">Toyota Corolla</option>
-            <option value="Honda CR-V">Honda CR-V</option>
-            <option value="Hyundai i20">Hyundai i20</option>
-            <option value="Hyundai Creta">Hyundai Creta</option>
-            <option value="Maruti Ertiga">Maruti Ertiga</option>
-            <option value="Suzuki Swift Hatchback">Suzuki Swift Hatchback</option>
-        </select>        
-    </div>
-</div>
-<div class="bookNow">
-    <button type="submit" id="bookNow">Book Now</button>
-</div>
-
-<!--------------------- Footer ------------------------>
+    <!--------------------- Footer ------------------------>
 <div class="footer">
     <ul class="about footerContent">
         <li><h2>About My Trip</h2></li>
@@ -117,7 +68,8 @@
 <div class="secFooter">
     <p>Copyright © 2016 - 2025 All rights reserved My Trip Tour & Travels | Powered By 🖤 NextGen Infotech Pvt. Ltd.</p>
 </div>
+    <script src="/javaScript/bookNow.js"></script>
+    <script src="/javaScript/updateDeleteData.js"></script>
 
-<script src="/javaScript/bookNow.js"></script>
 </body>
 </html>
